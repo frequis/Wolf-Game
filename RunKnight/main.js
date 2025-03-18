@@ -3,12 +3,17 @@ import CenaJogo from './CenaJogo.js'
 
 const config = {
     type: Phaser.AUTO,
-    width: 600,
-    height: 400,
+    width: 800,
+    height: 600,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+     },
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 100}
+            gravity: { y: 100},
+            debug: true
         }
     },
     parent: 'jogo-lobisomem',
